@@ -1,7 +1,7 @@
 exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
   //directConnect: true,
-  specs: ['spec1.js'],
+  specs: ['chain-locators.js'],
   capabilities: {
     browserName: 'chrome',
   },
