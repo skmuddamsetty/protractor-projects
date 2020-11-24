@@ -11,5 +11,12 @@ describe('chain locators', () => {
 
     element(by.id('gobutton')).click();
     expect(element.all(by.repeater('result in memory')).count()).toBe(2);
+
+    element.all(by.repeater('result in memory')).each((item) => {
+      item
+        .element(by.css('td:nth-child(3)'))
+        .getText()
+        .then((res) => console.log(res));
+    });
   });
 });
