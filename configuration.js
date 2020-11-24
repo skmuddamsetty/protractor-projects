@@ -1,7 +1,7 @@
 exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
   //directConnect: true,
-  specs: ['re-usable-methods.js'],
+  specs: ['dropdowns.js'],
   capabilities: {
     browserName: 'chrome',
   },
