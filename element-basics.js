@@ -5,10 +5,6 @@ describe('element basics', () => {
     element(by.model('second')).sendKeys(2);
 
     element(by.id('gobutton')).click();
-    element(by.css("h2[class='ng-binding']"))
-      .getText()
-      .then((res) => {
-        console.log(res);
-      });
+    expect(element(by.css("h2[class='ng-binding']")).getText()).toBe('3');
   });
 });
